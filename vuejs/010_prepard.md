@@ -10,10 +10,10 @@ npm config set registry https://registry.npmjs.org/
 
 ## 安装vue脚手架(vue cli)
 
-### vue2脚手架
+### vue 2.x 脚手架
 npm install vue-cli -g
 
-### vue3脚手架
+### vue 3.x 脚手架
 npm install @vue/cli -g
 
 ### 卸载
@@ -23,26 +23,7 @@ npm uninstall -g @vue/cli
 版本
 vue -V
 
-### zzz
+## vue创建web端项目
 
-### vue创建web端项目
-npm install -g @vue/cli
-
-vue create web
-
-npm i element-ui -S
-
-
-
-# Element UI 安装
-npm i element-ui -S
-
-
-# cnpm
-npm install cnpm -g --registry=https://registry.npm.taobao.org
-
-# build
-npm install
-npm run deploy:build
-
-
+### vue 2.x
+vue init webpack xxxxx
