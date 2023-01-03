@@ -12,9 +12,7 @@ D:\apache-tomcat-9.0.41\webapps\JSPWiki\WEB-INF\web.xml
 
    <context-param>
      <param-name>jspwiki.custom.config</param-name>
- 
-<param-value>e:/zhanghao/mydata/JSPWiki/jspwiki-custom.properties</param-val
-ue>
+     <param-value>e:/zhanghao/mydata/JSPWiki/jspwiki-custom.properties</param-value>
    </context-param>
 ```
 
