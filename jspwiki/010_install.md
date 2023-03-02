@@ -1,5 +1,5 @@
 
-# JspWiki -> 環境構築
+# JSPWiki -> 環境構築
 
 ## 1.下载JSPWiki.war文件
 
