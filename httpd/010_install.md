@@ -33,6 +33,6 @@ httpd.exe -k uninstall
 httpd.exe -k uninstall -n "MyServiceName"
 ```
 ---
-! 参考ページ
+# 参考ページ
 
 https://httpd.apache.org/docs/2.4/platform/windows.html
