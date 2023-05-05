@@ -37,10 +37,6 @@ npm i element-ui -S
 # Element UI 安装
 npm i element-ui -S
 
-
-# cnpm
-npm install cnpm -g --registry=https://registry.npm.taobao.org
-
 # build
 npm install
 npm run deploy:build
