@@ -54,3 +54,10 @@
 
   HTTP proxyの設定は Administration > System > HTTP の HTTP proxy のチェックボックスをチェックすると、設定が入れれるようになる。
   ```
+
+## 利用する際にリポジトリ関連
+
+* pythonリポジトリ
+  ```
+  pip install [package] -i http://[ip address]:[port]/repository/[リポジトリ]/simple --trusted-host [ip address]
+  ```
