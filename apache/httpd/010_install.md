@@ -18,7 +18,7 @@ Define SRVROOT "c:/Apache24"
 ⇒
 Define SRVROOT "C:/Program Files/Apache24"
 
-ServerName "192.168.1.214:80"
+ServerName "aaa.bbb.ccc.ddd:80"
 
 
 # Windows Service Install
