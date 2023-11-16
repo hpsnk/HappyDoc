@@ -1,9 +1,13 @@
-
-## 用途
+# 反向代理
 
 ## 设定内容
 
 * 对象文件 : httpd.conf
+    ```
+    LoadModule proxy_module modules/mod_proxy.so
+    LoadModule proxy_http_module modules/mod_proxy_http.so
+    ```
+
     ```
     <VirtualHost *:80>
         ProxyPreserveHost On
@@ -56,3 +60,5 @@
     ProxyPreserveHost 指令用于在反向代理过程中保留原始请求的 Host 头信息。当设置为 "On" 时，它将确保后端服务器接收到的请求头中的 Host 信息与原始请求的 Host 相对应。如果不启用 ProxyPreserveHost，则后端服务器可能会将请求视为来自代理服务器，而不是原始客户端。
 
     如果启用了 ProxyPreserveHost，则后端服务器将能够识别请求的原始主机名，从而提供正确的内容。
+
+* [https://www.cnblogs.com/zemliu/archive/2012/04/18/2454655.html]
