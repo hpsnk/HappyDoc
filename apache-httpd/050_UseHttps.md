@@ -14,3 +14,8 @@
     
     * https://blog.csdn.net/MeiWenjilu/article/details/128244363
     * https://www.jianshu.com/p/5e53423b239f
+
+    * プライベート認証局の構築
+        * https://pvision.jp/tech/2023/05/web-server-https-support-by-private-ca/
+        * https://blog.apar.jp/linux/8587/
+        * https://hcm-jinjer.com/blog/e-sign/private-certificate-authority/
