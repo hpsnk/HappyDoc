@@ -19,3 +19,4 @@
         * https://pvision.jp/tech/2023/05/web-server-https-support-by-private-ca/
         * https://blog.apar.jp/linux/8587/
         * https://hcm-jinjer.com/blog/e-sign/private-certificate-authority/
+        * https://nodejs.keicode.com/nodejs/openssl.php
