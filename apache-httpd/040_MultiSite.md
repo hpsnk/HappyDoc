@@ -36,3 +36,8 @@
     </VirtualHost>
     ```
 
+----
+
+## 参考サイト
+
+* https://rainbow-engine.com/multi-ipdomain-oneserver-apache/
