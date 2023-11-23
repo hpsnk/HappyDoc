@@ -1,25 +1,38 @@
+# 使用 `VirtualHost` 托段多个站点
 
-## 用途
+* `site1` : 占用`8801` 端口
 
-## 设定内容
+* `site2` : 占用`8802` 端口
 
-### 对象文件 : httpd.conf
+* `httpd.conf` 设置的例
 
-1. 设置监听端口
     ```apache
-    #Listen 12.34.56.78:80
-    Listen 80
-    ```
-    ↓
-    ```apache
-    #Listen 12.34.56.78:80
-    Listen 80
-    Listen 8901    # site1
-    Listen 8902    # site2
-    ```
+    Listen 8801
+    <VirtualHost *:8801>
+        ServerName   site1
+        ServerAlias  site1
+        DocumentRoot "D:/site1"
+        <Directory "D:/site1">
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+        </Directory>
+        ErrorLog "logs/site1.error.log"
+        CustomLog "logs/site1.access.log" common
+    </VirtualHost>
 
-2. 不同站点，`Directory` 和 `VirtualHost` 的导入
-    ```apache
-
+    Listen 8802
+    <VirtualHost *:8802>
+        ServerName   site2
+        ServerAlias  site2
+        DocumentRoot "D:/site2"
+        <Directory "D:/site2">
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+        </Directory>
+        ErrorLog "logs/site2.error.log"
+        CustomLog "logs/site2.access.log" common
+    </VirtualHost>
     ```
 
